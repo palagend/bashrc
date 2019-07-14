@@ -16,5 +16,15 @@ alias crontab='crontab -i'
 export LESS=' -i -g -n -R'
 
 # EDITOR setting
+#export EDITOR='emacsclient -c -s scorpio'
 export EDITOR=vim
 export VISUAL=vim
+export ALTERNATE_EDITOR=''
+export NO_AT_BRIDGE=1
+
+#USER DEFINED ALIASES
+alias c='clear'
+alias e='FAT_EMACS=1 emacsclient -s scorpio -t'
+alias ek='emacsclient -s scorpio -e "(kill-emacs)"'
+alias ec='FAT_EMACS=1 emacsclient -s scorpio -c'
+alias gsl='git svn log'
