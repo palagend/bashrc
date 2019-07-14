@@ -5,8 +5,6 @@ FILES=("bashrc" "inputrc")
 
 my_bash_dir=${1:-bashrc}
 
-echo $my_bash_dir
-
 for file in "${FILES[@]}"; do
     real_path="$HOME/$my_bash_dir/$file"
     new_path="$HOME/.$file"
