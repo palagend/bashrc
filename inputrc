@@ -1,4 +1,4 @@
-# Use vim style editing
+set completion-ignore-case on
 set editing-mode emacs
 
 # Some key bindings

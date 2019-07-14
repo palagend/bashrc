@@ -1,14 +1,19 @@
 #!/bin/bash
+# Usage: install.sh <dir_name_of_install.sh>
 
 FILES=("bashrc" "inputrc")
 
-for fi in "${FILES[@]}"; do
-    real_path="$HOME/.bash/$fi"
-    new_path="$HOME/.$fi"
+my_bash_dir=${1:-bashrc}
+
+echo $my_bash_dir
+
+for file in "${FILES[@]}"; do
+    real_path="$HOME/$my_bash_dir/$file"
+    new_path="$HOME/.$file"
     if [[ -h "$new_path" ]]; then
         rm "$new_path"
     else
         [[ -f "$new_path" ]] && mv "$new_path"{,.bak}
     fi
-    ln -s "$real_path" "$new_path"
+    ln -vs "$real_path" "$new_path"
 done
