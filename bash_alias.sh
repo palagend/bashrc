@@ -3,6 +3,7 @@
 #
 
 alias ls='ls --color=auto'
+alias l='ls --color=auto -lh'
 alias grep='grep --color=auto'
 
 # Safety features

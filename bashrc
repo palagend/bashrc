@@ -16,7 +16,7 @@
 source_if_exist ~/.bash/bash_opt.sh
 
 # Key bindings
-source_if_exist ~/.bash/bash_key.sh
+#source_if_exist ~/.bash/bash_key.sh
 
 # Eye candy
 source_if_exist ~/.bash/bash_apr.sh
@@ -25,7 +25,7 @@ source_if_exist ~/.bash/bash_apr.sh
 source_if_exist ~/.bash/bash_alias.sh
 
 # Misc
-source_if_exist ~/.bash/bash_misc.sh
+#source_if_exist ~/.bash/bash_misc.sh
 
 # Custom file
-source_if_exist ~/.bash/bash_custom.sh
+#source_if_exist ~/.bash/bash_custom.sh
