@@ -1,5 +1,5 @@
 # Use vim style editing
-set editing-mode vi
+set editing-mode emacs
 
 # Some key bindings
 $if mode=vi
