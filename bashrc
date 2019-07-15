@@ -32,7 +32,6 @@ source_if_exist ~/.bash/bash_alias.sh
 
 source_if_exist ~/planets/earth/bin/activate
 
-export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export GO111MODULE=on
 export GOPROXY=https://goproxy.io
