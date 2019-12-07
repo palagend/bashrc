@@ -30,8 +30,6 @@ source_if_exist ~/.bash/bash_alias.sh
 source_if_exist /usr/share/autojump/autojump.bash
 source_if_exist ~/planets/earth/bin/activate
 
-export GOPATH=~/go
-export GOBIN=$GOPATH/bin
 export GO111MODULE=on
 export GOPROXY=https://goproxy.io
 

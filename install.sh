@@ -3,7 +3,12 @@
 
 FILES=("bashrc" "inputrc")
 
-my_bash_dir=${1:-bashrc}
+my_bash_dir=${1:-.bash}
+
+[[ -e $HOME/.local/bin ]] || mkdir -p $HOME/.local/bin
+
+/bin/cp -v $HOME/$my_bash_dir/junction $HOME/.local/bin/junction
+/bin/cp -v $HOME/$my_bash_dir/ln.sh $HOME/.local/bin/ln.sh
 
 for file in "${FILES[@]}"; do
     real_path="$HOME/$my_bash_dir/$file"
@@ -13,5 +18,5 @@ for file in "${FILES[@]}"; do
     else
         [[ -f "$new_path" ]] && mv "$new_path"{,.bak}
     fi
-    ln -vs "$real_path" "$new_path"
+    junction "$new_path" "$real_path"
 done
