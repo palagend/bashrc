@@ -16,13 +16,6 @@ alias crontab='crontab -i'
 # less will pickup LESS environment variable
 export LESS=' -i -g -n -R'
 
-# EDITOR setting
-#export EDITOR='emacsclient -c -s scorpio'
-export EDITOR=vim
-export VISUAL=vim
-export ALTERNATE_EDITOR=''
-export NO_AT_BRIDGE=1
-
 #USER DEFINED ALIASES
 alias c='clear'
 alias e='FAT_EMACS=1 emacsclient -s scorpio -t'

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Usage: install.sh <dir_name_of_install.sh>
 
-FILES=("bashrc" "inputrc")
+FILES=("bashrc" "inputrc" "minttyrc")
 
 my_bash_dir=${1:-.bash}
 
@@ -18,5 +18,5 @@ for file in "${FILES[@]}"; do
     else
         [[ -f "$new_path" ]] && mv "$new_path"{,.bak}
     fi
-    junction "$new_path" "$real_path"
+    junction -accepteula "$new_path" "$real_path"
 done

@@ -21,18 +21,20 @@ source_if_exist ~/.bash/bash_apr.sh
 # Aliases
 source_if_exist ~/.bash/bash_alias.sh
 
+# Export environments
+source_if_exist ~/.bash/bash_export.sh
+
 # Misc
 #source_if_exist ~/.bash/bash_misc.sh
 
 # Custom file
 #source_if_exist ~/.bash/bash_custom.sh
 
+#Autojump file
 source_if_exist /usr/share/autojump/autojump.bash
-source_if_exist ~/planets/earth/bin/activate
-
-export GO111MODULE=on
-export GOPROXY=https://goproxy.io
 
 # Setting PATH environment variable
-[[ -r "${HOME}/.bash/bash_path.sh" ]] && source "${HOME}/.bash/bash_path.sh"
+source_if_exist ~/.bash/bash_path.sh
 
+# Native configurations
+source_if_exist ~/.nativerc
