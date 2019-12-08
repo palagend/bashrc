@@ -9,11 +9,11 @@ smart_export(){
     esac
 }
 
-smart_export "~/go/bin"
 smart_export "/sbin"
 smart_export "/usr/sbin"
 smart_export "/usr/local/sbin"
-smart_export "$HOME"/.local/bin
+smart_export "~/.local/bin"
+smart_export "~/go/bin"
 
 # Always export PATH at end of file
 export PATH=$PATH

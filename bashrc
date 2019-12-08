@@ -27,14 +27,13 @@ source_if_exist ~/.bash/bash_alias.sh
 # Custom file
 #source_if_exist ~/.bash/bash_custom.sh
 
+# Export environment
+#source_if_exist ~/.bash/bash_export.sh
+
 source_if_exist /usr/share/autojump/autojump.bash
 source_if_exist ~/planets/earth/bin/activate
 
-export GOPATH=~/go
-export GOBIN=$GOPATH/bin
-export GO111MODULE=on
-export GOPROXY=https://goproxy.io
-
 # Setting PATH environment variable
-[[ -r "${HOME}/.bash/bash_path.sh" ]] && source "${HOME}/.bash/bash_path.sh"
+source_if_exist ~/.bash/bash_path.sh
 
+source_if_exist ~/.bash/.nativerc
