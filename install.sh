@@ -9,6 +9,7 @@ my_bash_dir=${1:-.bash}
 
 /bin/cp -v $HOME/$my_bash_dir/junction $HOME/.local/bin/junction
 /bin/cp -v $HOME/$my_bash_dir/ln.sh $HOME/.local/bin/ln.sh
+/bin/cp -v $HOME/$my_bash_dir/xpl $HOME/.local/bin/xpl
 
 for file in "${FILES[@]}"; do
     real_path="$HOME/$my_bash_dir/$file"
