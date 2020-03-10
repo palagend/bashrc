@@ -3,7 +3,7 @@
 
 FILES=("bashrc" "inputrc")
 
-my_bash_dir=${1:-bashrc}
+my_bash_dir=${1:-.bash}
 
 for file in "${FILES[@]}"; do
     real_path="$HOME/$my_bash_dir/$file"
